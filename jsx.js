@@ -1,4 +1,4 @@
-import { createElement } from "react";
+import React, { createElement } from "react";
 import ReactDOM from "react-dom/client";
 
 const heading1 = <h1 key="2019">Heading1 from JSX</h1>;
@@ -35,7 +35,6 @@ const container = (
   <div>
     {heading1}
     {heading2}
-    {/* <HeaderComponent /> */}
     {HeaderComponent()}
     {/* the above also can be done */}
     <HeaderComponent2 />
@@ -43,5 +42,39 @@ const container = (
   </div>
 );
 
+// React fragment - it gives us a div like strucute but will not show in the html
+const Containers = () => {
+  return (
+    // <React.Fragment>
+    //   <h1>Hello</h1>
+    //   <h1>Hello2</h1>
+    // </React.Fragment>
+    // this same as the above
+    <>
+      <h1>Hello</h1>
+      <h1>Hello2</h1>
+    </>
+  );
+};
+
+// react styles
+const styleObj = {
+  border: "1px solid black",
+};
+
+const Style = () => (
+  <>
+    <h1 style={styleObj}>Hello</h1>
+    {/* or we can directly write object in the tag itself */}
+    <h1
+      style={{
+        background: "red",
+      }}
+    >
+      Hello
+    </h1>
+  </>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render(<Style />);
