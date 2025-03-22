@@ -1,0 +1,27 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "\"Practise\"",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seshu-yaswanth-2001/React.git"
+  },
+  "author": "Seshu Yaswanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seshu-yaswanth-2001/React/issues"
+  },
+  "homepage": "https://github.com/seshu-yaswanth-2001/React#readme",
+  "devDependencies": {
+    "parcel": "^2.14.1"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+ * PARCEL is a package
+ * Parcel package is dependent on other package and that package is dependent on other package
+ * this is called "tranitive Dependencies"
+ *
+ *
+ * HMR - Hot Module Replacement
+ * File Watching Algorithms written in C++ for fast Execution
+ * dist folder - makes our app bundling, minify the code, cleans our code
+ * Super fast build algorithm
+ * it does image optimization also
+ * Caching while development
+ * Compress the files
+ * parcel is comptaible with older version of browsers
+ * we can build HTTPS on dev
+ * Parcel and dist need to be in gitignore file
+ * if you have two project open at a time it open with two different port numbers
+ * so, it handles Portnumbers also
+ * Consistent hashing Algorithm
+ * tree shaking - Removing un-wanted libraries
